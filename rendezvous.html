@@ -25,34 +25,21 @@
         <h2>Prendre un rendez-vous</h2>
         <p>Remplissez le formulaire pour réserver un rendez-vous.</p>
       </div>
-      <form action="send_appointment.php" method="POST" accept-charset"UTF-8">
-        <div class="row">
-          <div class="col-lg-6">
-            <input type="text" name="firstname" placeholder="Votre Prénom" required>
-          </div>
-          <div class="col-lg-6">
-            <input type="text" name="lastname" placeholder="Votre Nom" required>
-          </div>
-          <div class="col-lg-6">
-            <input type="email" name="email" placeholder="Votre Email" required>
-          </div>
-          <div class="col-lg-6">
-            <input type="tel" name="phone" placeholder="Votre Téléphone" required>
-          </div>
-          <div class="col-lg-6">
-            <input type="date" name="date" required>
-          </div>
-          <div class="col-lg-6">
-            <input type="time" name="time" required>
-          </div>
-          <div class="col-lg-12">
-            <textarea name="message" placeholder="Votre Message"></textarea>
-          </div>
-          <div class="col-lg-12 text-center">
-            <button type="submit" class="site-btn">Envoyer</button>
-          </div>
-        </div>
-      </form>
+     <form
+  action="https://formspree.io/f/mjkeeevo"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
   </section>
   <!-- Appointment Section End -->
