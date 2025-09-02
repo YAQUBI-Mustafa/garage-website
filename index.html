@@ -640,6 +640,14 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+     <script>
+        // Confirmation message
+        document.querySelector(".appointment__form").addEventListener("submit", function() {
+            setTimeout(function() {
+                document.getElementById("confirmation").style.display = "block";
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
