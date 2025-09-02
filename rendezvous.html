@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prendre un rendez-vous</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+  <!-- Header (optionnel, même que ton site principal) -->
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Appointment Section Begin -->
+  <section class="appointment spad">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Prendre un rendez-vous</h2>
+        <p>Remplissez le formulaire pour réserver un rendez-vous.</p>
+      </div>
+      <form action="send_appointment.php" method="POST" class="appointment__form">
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" name="firstname" placeholder="Votre Prénom" required>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" name="lastname" placeholder="Votre Nom" required>
+          </div>
+          <div class="col-lg-6">
+            <input type="email" name="email" placeholder="Votre Email" required>
+          </div>
+          <div class="col-lg-6">
+            <input type="tel" name="phone" placeholder="Votre Téléphone" required>
+          </div>
+          <div class="col-lg-6">
+            <input type="date" name="date" required>
+          </div>
+          <div class="col-lg-6">
+            <input type="time" name="time" required>
+          </div>
+          <div class="col-lg-12">
+            <textarea name="message" placeholder="Votre Message"></textarea>
+          </div>
+          <div class="col-lg-12 text-center">
+            <button type="submit" class="site-btn">Envoyer</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Appointment Section End -->
+
+  <!-- Footer (optionnel, même que ton site principal) -->
+  <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+    <div class="container text-center">
+      <p>© 2025 Garage Auto. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
